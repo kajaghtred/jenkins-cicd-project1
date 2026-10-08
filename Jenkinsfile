@@ -4,7 +4,7 @@ pipeline {
         stages {
 
             stage('checkout'){
-                steps{
+                steps {
                     checkout scm
                 }
             }
@@ -15,7 +15,7 @@ pipeline {
                 }
             }
 
-            stage(''){
+            stage('Run Tests'){
                 steps {
                     bat 'pytest'
                 }
